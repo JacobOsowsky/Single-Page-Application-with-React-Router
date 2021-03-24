@@ -1,6 +1,6 @@
 import React from 'react';
-import Article from './Article'
-import './HomePage.css'
+import Article from '../components/Article'
+import '../styles/HomePage.css'
 
 const articles = [
     {id: 1,

@@ -1,13 +1,13 @@
 import React from 'react';
-import './Navigation.css';
+import '../styles/Navigation.css';
 import {NavLink} from 'react-router-dom'
 
 
 const nav = [
     {name: 'start', path: '/', exact: true},
-    {name: 'products', path: 'products'},
-    {name: 'contact', path: 'contact'},
-    {name: 'admin panel', path: 'admin'},
+    {name: 'products', path: '/products'},
+    {name: 'contact', path: '/contact'},
+    {name: 'admin panel', path: '/admin'},
 ]
 const Navigation = () => {
     const navigation = nav.map(item=> {

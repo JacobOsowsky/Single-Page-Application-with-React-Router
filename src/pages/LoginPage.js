@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './LoginPage.css'
+import '../styles/LoginPage.css'
 
 class LoginPage extends Component {
     state = { 

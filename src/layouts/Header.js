@@ -1,8 +1,8 @@
 import React from 'react';
-import './Header.css'
-import img1 from './img/img1.jpg';
-import img2 from './img/img2.jpg';
-import img3 from './img/img3.jpg';
+import '../styles/Header.css'
+import img1 from '../images/img1.jpg';
+import img2 from '../images/img2.jpg';
+import img3 from '../images/img3.jpg';
 import {Route, Switch} from 'react-router-dom'
 
 const Header = () => {
