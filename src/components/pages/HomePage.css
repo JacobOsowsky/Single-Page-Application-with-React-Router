@@ -1,0 +1,16 @@
+.homePage {
+    width: 70%;
+    margin: 50px auto 0 50px;
+}
+
+.homePage article {
+    margin-top: 20px;
+}
+
+.homePage article h5 {
+    margin: 5px 0 20px 0;
+}
+
+.homePage article h3 {
+    text-transform: uppercase;
+}
