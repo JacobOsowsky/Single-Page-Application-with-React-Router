@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SPA-with-React-Router/static/css/main.da7febdd.chunk.css",
+    "main.js": "/SPA-with-React-Router/static/js/main.07e5fc41.chunk.js",
+    "main.js.map": "/SPA-with-React-Router/static/js/main.07e5fc41.chunk.js.map",
+    "runtime-main.js": "/SPA-with-React-Router/static/js/runtime-main.5204166b.js",
+    "runtime-main.js.map": "/SPA-with-React-Router/static/js/runtime-main.5204166b.js.map",
+    "static/js/2.17aee3fb.chunk.js": "/SPA-with-React-Router/static/js/2.17aee3fb.chunk.js",
+    "static/js/2.17aee3fb.chunk.js.map": "/SPA-with-React-Router/static/js/2.17aee3fb.chunk.js.map",
+    "index.html": "/SPA-with-React-Router/index.html",
+    "static/css/main.da7febdd.chunk.css.map": "/SPA-with-React-Router/static/css/main.da7febdd.chunk.css.map",
+    "static/js/2.17aee3fb.chunk.js.LICENSE.txt": "/SPA-with-React-Router/static/js/2.17aee3fb.chunk.js.LICENSE.txt",
+    "static/media/img1.e9243760.jpg": "/SPA-with-React-Router/static/media/img1.e9243760.jpg",
+    "static/media/img2.a267ae9b.jpg": "/SPA-with-React-Router/static/media/img2.a267ae9b.jpg",
+    "static/media/img3.c2b89390.jpg": "/SPA-with-React-Router/static/media/img3.c2b89390.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5204166b.js",
+    "static/js/2.17aee3fb.chunk.js",
+    "static/css/main.da7febdd.chunk.css",
+    "static/js/main.07e5fc41.chunk.js"
+  ]
+}
