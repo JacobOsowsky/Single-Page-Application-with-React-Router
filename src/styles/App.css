@@ -10,23 +10,42 @@ header {
   position: relative;
   flex-basis: 30vh;
   overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1vw;
+  box-shadow: 0 1px 2px silver;
 }
 
 main {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+  margin-top: 1vw;
 }
 
 aside {
-  width: 20vw;
+  flex-basis: 10%;
+  background-color: #fff;
+  border-radius: 1vw;
+  box-shadow: 0 1px 2px silver;
+  margin-right: 1vw;
+
 }
 
 footer {
+  width: 100%;
+  margin: 1vw auto;
   padding: 10px 0;
   text-align: center;
+  background-color: #fff;
+  border-radius: 1vw;
+  box-shadow: 0 1px 2px silver;
 }
 
 .blog {
+  flex-basis: 70%;
   flex-grow: 1;
+  background-color: #fff;
+  border-radius: 1vw;
+  box-shadow: 0 1px 2px silver;
 }

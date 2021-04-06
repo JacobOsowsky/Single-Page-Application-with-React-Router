@@ -7,7 +7,22 @@ import Page from './Page'
 import Footer from './Footer'
 
 class App extends Component {
-  state = {  }
+  state = { 
+    time: 0
+   }
+
+  timeCounter = () => {
+    this.setState({
+    time: this.state.time + 1
+    })
+  }
+    
+  componentDidMount(){
+    setInterval(this.timeCounter, 1000)
+  }
+
+
+
   render() { 
     return (
       <Router basename={process.env.PUBLIC_URL}>
@@ -24,7 +39,7 @@ class App extends Component {
             </section>
           </main>
           <footer>
-            <Footer/>
+            <Footer timeCounter={this.state.time}/>
           </footer>
         </div>
       </Router>

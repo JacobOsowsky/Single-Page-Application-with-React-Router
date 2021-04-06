@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css'
-import img1 from '../images/img1.jpg';
+import img1 from '../images/img1.png';
 import img2 from '../images/img2.jpg';
 import img3 from '../images/img3.jpg';
 import {Route, Switch} from 'react-router-dom'
@@ -12,17 +12,11 @@ const Header = () => {
         <Route path='/' exact render={()=> (
             <img src={img1} alt="image1"></img>
         )} />
-        <Route path='/products' render={()=> (
+        <Route path='/games' render={()=> (
             <img src={img2} alt="image2"></img>
         )} />
-        <Route path='/contact' render={()=> (
+        <Route path='/tools' render={()=> (
             <img src={img3} alt="image3"></img>
-        )} />
-        <Route path='/admin' render={()=> (
-            <img src={img1} alt="image1"></img>
-        )} />
-        <Route render={()=> (
-            <img src={img2} alt="image2"></img>
         )} />
     </Switch>   
             

@@ -1,35 +1,73 @@
-import React from 'react';
-import Article from '../components/Article'
+import React, {Component} from 'react';
 import '../styles/HomePage.css'
 
-const articles = [
-    {id: 1,
-    title: 'Co to jest coś?',
-    author: 'Tomasz Jakiś',
-    text: ' Zaimek nieokreślony, zastępujący nazwę dowolnego przedmiotu lub faktu bądź takiego, którego mówiący nie chce lub nie umie określić, np. Coś trzeba z tym zrobić.'
-    },
-    {id: 2,
-    title: 'Co to jest nic?',
-    author: 'Tomasz Nijaki',
-    text: '«Zaimek rzeczowny, sygnalizujący, zwykle wraz ze słowem nie, nieistnienie obiektu lub zdarzenia o właściwościach określonych w danym zdaniu, np. Wieczorami już nic nie czytam.'
-    },
-    {id: 3,
-    title: 'Co to jest wszystko?',
-    author: 'Tomasz Wszystki',
-    text: 'Zaimek komunikujący, że to, o czym mowa w zdaniu, dotyczy całej substancji lub zbiorowości nazywanej przez określany rzeczownik.'
-},
-]
 
-const HomePage = () => {
-    const artList = articles.map(article=>{
+
+class HomePage extends Component {
+    state = { 
+        txt: ['Witaj na mojej treningowej stronie.', 'Zamieszczam tutaj moje niewielkie projekty w celu rozwijania umiejętności programistycznych.', 'Zapraszam do zapoznania się z napisanymi przeze mnie przykładowymi narzędziami i grami.'],
+        letterNumber: -10,
+        textNumber: 0,
+        text: '',
+        isActive: true
+
+     }
+
+     addLetter = () => {
+        const {txt, letterNumber, textNumber,text} = this.state;
+        if (textNumber <txt.length) {
+            if (letterNumber < txt[textNumber].length) {
+                this.setState({
+                    letterNumber: letterNumber + 1
+                })
+            }
+            if (letterNumber === txt[textNumber].length) {
+                setTimeout(()=>{
+                    this.setState({
+                        text: "",
+                        letterNumber: -10,
+                        textNumber: textNumber + 1
+                    })
+                }, 1000)
+            }
+            if (letterNumber >=0 && letterNumber < txt[textNumber].length) {
+                this.setState({
+                    text: text + txt[textNumber][letterNumber]
+                })
+            }
+        } else if (textNumber === txt.length) {
+            this.setState({
+                textNumber: 0
+            })
+        }
+    }
+
+     handleToggle = ()=>{
+         this.setState({
+             isActive: !this.state.isActive
+         })
+     }
+
+
+    cursorAnimation = () => {
         return (
-            <Article key={article.id} {...article}></Article>
+            <span className={this.state.isActive? 'active' : null}>|</span>
         )
-    })
-    return ( 
-        <div className="homePage">{artList}</div>
-        
-     );
+    }
+
+    componentDidMount(){
+        setInterval(this.handleToggle, 400);
+        setInterval(this.addLetter, 50)
+    }
+
+    render() { 
+        return (
+            <>
+            <div className="homePage"><span>{this.state.text}</span>{this.cursorAnimation()}</div>
+            </>
+          );
+    }
 }
  
 export default HomePage;
+ 

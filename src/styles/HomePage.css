@@ -1,16 +1,10 @@
 .homePage {
-    width: 70%;
     margin: 50px auto 0 50px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'New Tegomin', serif;
 }
 
-.homePage article {
-    margin-top: 20px;
-}
-
-.homePage article h5 {
-    margin: 5px 0 20px 0;
-}
-
-.homePage article h3 {
-    text-transform: uppercase;
+span.active {
+    display: none;
 }

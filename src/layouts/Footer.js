@@ -1,30 +1,12 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
 import '../styles/Footer.css'
 
-const Footer = () => {
+const Footer = (props) => {
+    const seconds = props.timeCounter;
+    const minutes = Math.floor(props.timeCounter / 60);
+     
     return ( 
-        <div>
-            <h4>Footer</h4>
-            <Route path='/' exact render={()=>(
-                <p>Jesteś na <span>stronie głównej</span></p>
-            )}/>
-
-            <Route path='/:page' render={(props)=>(
-                <>
-                <p>Jesteś na <span>{props.match.params.page}</span></p>
-                
-                </>
-            )}/>
-
-            <Route path='/:page/:product' render={(props)=>(
-                <>
-                <p>Jesteś na <span>{props.match.params.product}</span></p>
-                
-                </>
-            )}/>
-
-        </div>
+        <p>Jesteś już na stronie: <strong>{minutes}</strong> min.<strong> {seconds < 60 ? seconds : seconds-minutes*60}</strong> sek.</p>
      );
 }
  

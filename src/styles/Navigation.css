@@ -1,6 +1,5 @@
 ul {
     list-style-type: none;
-    margin-top: 50px;
 }
 
 a {
@@ -9,6 +8,7 @@ a {
     padding: 10px;
     text-transform: uppercase;
     transition: 0.2s;
+    border-radius: 10px;
 }
 
 a:hover {

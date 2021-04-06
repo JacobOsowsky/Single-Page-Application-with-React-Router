@@ -1,0 +1,26 @@
+div.calculator {
+    width: 40vw;
+    height: 25vw;
+    margin: 3vw auto auto auto;
+    background-color: #777;
+}
+
+div.lastClick,
+div.number,
+div.result {
+    min-width: 30%;
+    height: 10%;
+    background-color: #555;
+    text-align: right;
+}
+
+div.interface {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interface button {
+    flex-basis: 30%;
+
+}
