@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const games = ['oczko', 'kamieńpapiernożyce']
+const games = ['kamieńpapiernożyce']
 
 const GamesListPage = () => {
     const gamesList = games.map(game=>(
@@ -10,7 +10,10 @@ const GamesListPage = () => {
             </li>
     ))
     return ( 
-        <ul>{gamesList}</ul>
+        <>
+            <ul>{gamesList}</ul>
+            <a href='https://jacobosowsky.github.io/Oczko/'>Oczko</a>
+        </>
      );
 }
  

@@ -57,7 +57,7 @@ class HomePage extends Component {
 
     componentDidMount(){
         setInterval(this.handleToggle, 400);
-        setInterval(this.addLetter, 50)
+        setInterval(this.addLetter, 40)
     }
 
     render() { 

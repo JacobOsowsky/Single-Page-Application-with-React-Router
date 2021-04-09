@@ -10,7 +10,7 @@ import ErrorPage from '../pages/ErrorPage';
 
 const Page = () => {
     return (
-        <> 
+        <div className='page'> 
         <Switch>
             <Route path="/" exact component={HomePage}/>
             <Route path="/tools" component={ToolsListPage}/>
@@ -19,7 +19,7 @@ const Page = () => {
             <Route path="/game/:id" component={GamePage}/>
             <Route component={ErrorPage}/>
         </Switch>
-        </>
+        </div>
      );
 }
  
