@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Single-Page-Application-with-React-Router/static/css/main.a56fea88.chunk.css",
-    "main.js": "/Single-Page-Application-with-React-Router/static/js/main.a2c68e1a.chunk.js",
-    "main.js.map": "/Single-Page-Application-with-React-Router/static/js/main.a2c68e1a.chunk.js.map",
+    "main.css": "/Single-Page-Application-with-React-Router/static/css/main.a9071132.chunk.css",
+    "main.js": "/Single-Page-Application-with-React-Router/static/js/main.cf67fba1.chunk.js",
+    "main.js.map": "/Single-Page-Application-with-React-Router/static/js/main.cf67fba1.chunk.js.map",
     "runtime-main.js": "/Single-Page-Application-with-React-Router/static/js/runtime-main.9bc2dd5a.js",
     "runtime-main.js.map": "/Single-Page-Application-with-React-Router/static/js/runtime-main.9bc2dd5a.js.map",
     "static/js/2.424744d7.chunk.js": "/Single-Page-Application-with-React-Router/static/js/2.424744d7.chunk.js",
     "static/js/2.424744d7.chunk.js.map": "/Single-Page-Application-with-React-Router/static/js/2.424744d7.chunk.js.map",
     "index.html": "/Single-Page-Application-with-React-Router/index.html",
-    "static/css/main.a56fea88.chunk.css.map": "/Single-Page-Application-with-React-Router/static/css/main.a56fea88.chunk.css.map",
+    "static/css/main.a9071132.chunk.css.map": "/Single-Page-Application-with-React-Router/static/css/main.a9071132.chunk.css.map",
     "static/js/2.424744d7.chunk.js.LICENSE.txt": "/Single-Page-Application-with-React-Router/static/js/2.424744d7.chunk.js.LICENSE.txt",
-    "static/media/img1.0607f71d.png": "/Single-Page-Application-with-React-Router/static/media/img1.0607f71d.png",
-    "static/media/img2.2d1d952a.jpg": "/Single-Page-Application-with-React-Router/static/media/img2.2d1d952a.jpg",
-    "static/media/img3.8d0004a2.jpg": "/Single-Page-Application-with-React-Router/static/media/img3.8d0004a2.jpg"
+    "static/media/Header.css": "/Single-Page-Application-with-React-Router/static/media/img1.c0108bc6.png",
+    "static/media/paper.c93116bb.jpg": "/Single-Page-Application-with-React-Router/static/media/paper.c93116bb.jpg",
+    "static/media/rock.f8cfb2a1.jpg": "/Single-Page-Application-with-React-Router/static/media/rock.f8cfb2a1.jpg",
+    "static/media/scissors.9617ce00.jpg": "/Single-Page-Application-with-React-Router/static/media/scissors.9617ce00.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9bc2dd5a.js",
     "static/js/2.424744d7.chunk.js",
-    "static/css/main.a56fea88.chunk.css",
-    "static/js/main.a2c68e1a.chunk.js"
+    "static/css/main.a9071132.chunk.css",
+    "static/js/main.cf67fba1.chunk.js"
   ]
 }
