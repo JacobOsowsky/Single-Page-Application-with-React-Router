@@ -43,7 +43,8 @@ class PaperScissorsRock extends Component {
         }
         /*OKREŚLENIE ZWYCIĘZCY*/
         const player = this.state.playerChoice;
-        const computer = this.options[Math.floor(Math.random() * this.options.length)].name;
+        const index = Math.floor(Math.random() * this.options.length)
+        const computer = this.options[index].name;
         let result
         if ((player === 'papier' && computer === 'kamień') || (player === 'kamień' && computer === 'nożyczki') || (player === 'nożyczki' && computer === 'papier')){
             result = 'Gracz'
@@ -83,32 +84,36 @@ class PaperScissorsRock extends Component {
         this.setState({
             isHandChosen: false
         })
+    
     }
 
     
 
     render(){
         const {playerChoice, computerChoice, winner, gamesNumber, wins, losses, draws} = this.state
-        const options = this.options.map(option => <img key={option.name} src={option.url} alt={option.name} onClick={this.handleSelection}></img>)
+        const options = this.options.map(option => <img className='hand' key={option.name} src={option.url} alt={option.name} onClick={this.handleSelection}></img>)
     return ( 
-        <div className="game">
+        <div className="rock">
             <h3>Kamień - papier - nożyce</h3>
-            <h5>Wybierz</h5>
+            <h4>Wybierz</h4>
             <div className='choices'>{options}</div>
+            {this.state.computerChoice === 'papier'? <img className='computerChoice' src={this.options[0].url} alt='pc'></img> : null}
+            {this.state.computerChoice === 'nożyczki'? <img className='computerChoice' src={this.options[1].url} alt='pc'></img> : null}
+            {this.state.computerChoice === 'kamień'? <img className='computerChoice' src={this.options[2].url} alt='pc'></img> : null}
             <button onClick={this.startGame}>Zagraj!</button>
-            <div className='gameresult'>
-                <h5>Wynik rozgrywki</h5>
-                <p>Twój wybór: <span>{playerChoice}</span></p>
-                <p>Wybór komputera: <span>{computerChoice}</span></p>
-                <p>Zwycięzca rundy: <span>{winner}</span></p>
-            </div>
-            <div className='statistics'>
-                <h5>Wyniki</h5>
-                <p>Liczba rund: <span>{gamesNumber}</span></p>
-                <p>Wygranych: <span>{wins}</span></p>
-                <p>Przegranych: <span>{losses}</span></p>
-                <p>Remisów: <span>{draws}</span></p>
-            </div>
+                <div className='gameresult'>
+                    <h4>Wynik rozgrywki</h4>
+                    <p>Twój wybór: <span>{playerChoice}</span></p>
+                    <p>Wybór komputera: <span>{computerChoice}</span></p>
+                    <p>Zwycięzca rundy: <span>{winner}</span></p>
+                </div>
+                <div className='statistics'>
+                    <h4>Wyniki</h4>
+                    <p>Liczba rund: <span>{gamesNumber}</span></p>
+                    <p>Wygranych: <span>{wins}</span></p>
+                    <p>Przegranych: <span>{losses}</span></p>
+                    <p>Remisów: <span>{draws}</span></p>
+                </div>
         </div>
      );
     }

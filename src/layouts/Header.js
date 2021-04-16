@@ -1,8 +1,5 @@
 import React from 'react';
 import '../styles/Header.css'
-import img1 from '../images/img1.png';
-import img2 from '../images/img2.jpg';
-import img3 from '../images/img3.jpg';
 import {Route, Switch} from 'react-router-dom'
 
 const Header = () => {
@@ -19,8 +16,8 @@ const Header = () => {
                     <div className='rightear'>
                         <div className='inside'></div>
                     </div>
-                    <div className='leftglass'></div>
-                    <div className='rightglass'></div>
+                    <div className='leftglass silver'></div>
+                    <div className='rightglass silver'></div>
                     <div className='glassconnection'></div>
                     <div className='glassleftrod'></div>
                     <div className='glassrightrod'></div>
@@ -61,8 +58,8 @@ const Header = () => {
                 <div className='rightear'>
                     <div className='inside'></div>
                 </div>
-                <div className='leftglass silver'></div>
-                <div className='rightglass silver'></div>
+                <div className='leftglass'></div>
+                <div className='rightglass'></div>
                 <div className='glassconnection'></div>
                 <div className='glassleftrod'></div>
                 <div className='glassrightrod'></div>

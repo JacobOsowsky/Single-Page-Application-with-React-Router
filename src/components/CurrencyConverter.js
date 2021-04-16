@@ -1,36 +1,37 @@
 import React, {Component} from 'react';
 import Item from '../components/Item'
+import '../styles/CurrencyConverter.css'
 
 class CurrencyConverter extends Component {
     state = {
         amount: "",
-        select: "electricity"
+        select: "electricity",
       }
       
       static defaultProps = {
         currencies : [
           {
             id: 1,
-            name: "zloty",
+            name: "złoty",
             ratio: 1,
             title: "wartość w złotych:"
           },
           {
             id: 2,
             name: "euro",
-            ratio: 3.9,
+            ratio: 0,
             title: "wartość w euro:"
           },
           {
             id: 3,
             name: "dollar",
-            ratio: 3,
+            ratio: 0,
             title: "wartość w dolarach:"
           },
           {
             id: 4,
             name: "pound",
-            ratio: 3.6,
+            ratio: 0,
             title: "wartość w funtach:"
           }
         ],
@@ -67,6 +68,24 @@ class CurrencyConverter extends Component {
       const price = this.props.prices[select]
       return price
     }
+
+    componentDidMount() {
+      const API = 'http://api.nbp.pl/api/exchangerates/tables/A/'
+      fetch(API).then(response => {
+        if(response.ok){
+          return response
+        }
+        throw Error(response.status)
+      })
+      .then(response=>response.json())
+      .then(data=> {
+        this.props.currencies[1].ratio = data[0].rates[7].mid
+        this.props.currencies[2].ratio = data[0].rates[1].mid
+        this.props.currencies[3].ratio = data[0].rates[10].mid
+
+      })
+      .catch(error=>console.log(error + "  - nie działa"))
+    }
     
       render() {
         const currenciesPrices = this.props.currencies.map(item=>
@@ -78,23 +97,23 @@ class CurrencyConverter extends Component {
           price={this.selectPrice(this.state.select)}
           />)
         return (
-          <>
-          <label>Wybierz produkt</label>
-          <select onChange={this.handleChange}>
-            <option value="electricity">prąd</option>
-            <option value="gas">benzyna</option>
-            <option value="oranges">pomarańcze</option>
-          </select>
-          <br></br>
-          <input 
-          type="number"
-          value={this.state.amount}
-          onChange ={this.handleInputChange}
-          >
-          </input>
-          {this.handleSuffix()}
-            {currenciesPrices}
-          </>
+          <div className='converter'>
+            <label>Wybierz produkt</label>
+            <select onChange={this.handleChange}>
+              <option value="electricity">prąd</option>
+              <option value="gas">benzyna</option>
+              <option value="oranges">pomarańcze</option>
+            </select>
+            <br></br>
+            <input 
+            type="number"
+            value={this.state.amount}
+            onChange ={this.handleInputChange}
+            >
+            </input>
+            {this.handleSuffix()}
+              {currenciesPrices}
+          </div>
         )
       }
 }

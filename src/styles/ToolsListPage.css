@@ -1,0 +1,31 @@
+.tools {
+    display: flex;
+    flex-direction: row;
+}
+
+.tools .tool {
+    flex-basis: 25%;
+    margin: 10vh auto 0 auto;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.tool:hover {
+    transform: scale(1.02);
+}
+
+.tool h4 {
+    letter-spacing: 2px;
+    border-bottom: 1px solid #444;
+    padding: 2%;
+}
+
+.tool p {
+    text-transform: none;
+    margin: 5%;
+    line-height: 150%;
+}
+
+.tool a:hover {
+    color: #444
+}

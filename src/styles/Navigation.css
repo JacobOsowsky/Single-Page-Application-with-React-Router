@@ -1,5 +1,6 @@
 ul {
     list-style-type: none;
+    text-align: center;
 }
 
 a {
@@ -8,29 +9,16 @@ a {
     padding: 10px;
     text-transform: uppercase;
     transition: 0.2s;
-    border-radius: 10px;
+    color: #444;
+    border-radius: 1vw;
+    box-shadow: 0 10px 15px silver;
 }
 
+
 a:hover {
-    transform: translateX(20px);
+    color: #58a6ff;
 }
 
 a.active {
-    transform: translateX(0);
-}
-
-li:nth-child(1) a.active {
-    border-left: 10px solid red;
-}
-
-li:nth-child(2) a.active {
-    border-left: 10px solid green;
-}
-
-li:nth-child(3) a.active {
-    border-left: 10px solid blue;
-}
-
-li:nth-child(4) a.active {
-    border-left: 10px solid orange;
+    color: #58a6ff
 }

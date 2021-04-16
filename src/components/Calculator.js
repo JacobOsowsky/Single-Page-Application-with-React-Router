@@ -217,7 +217,7 @@ handleClick=(button)=>{
         return ( 
             <div className="calculator">
                 <div className='lastClick'>{this.state.display}</div>
-                <div className='result'>{this.state.result}</div>
+                <div className='result'>{this.state.result > 0 ? this.state.result : null}</div>
                 <div className='number'>{this.state.number}</div>
                 <div className='interface'>{buttons}</div>
             </div>

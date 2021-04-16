@@ -7,8 +7,8 @@ const GamePage = () => {
     return (
         <div>
             <Switch>
-                <Route path="/game/oczko" component={Oczko}/>
-                <Route path="/game/kamieńpapiernożyce" component={PaperScissorsRock}/>
+                <Route path="/games/oczko" component={Oczko}/>
+                <Route path="/games/kamień-papier-nożyce" component={PaperScissorsRock}/>
             </Switch>
         </div>
       );

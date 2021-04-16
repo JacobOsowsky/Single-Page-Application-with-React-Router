@@ -13,10 +13,10 @@ const Page = () => {
         <div className='page'> 
         <Switch>
             <Route path="/" exact component={HomePage}/>
-            <Route path="/tools" component={ToolsListPage}/>
-            <Route path="/tool/:id" component={ToolPage}/>
-            <Route path="/games" component={GamesListPage}/>
-            <Route path="/game/:id" component={GamePage}/>
+            <Route path="/tools" exact component={ToolsListPage}/>
+            <Route path="/tools/:id" exact component={ToolPage}/>
+            <Route path="/games" exact component={GamesListPage}/>
+            <Route path="/games/:id" exact component={GamePage}/>
             <Route component={ErrorPage}/>
         </Switch>
         </div>

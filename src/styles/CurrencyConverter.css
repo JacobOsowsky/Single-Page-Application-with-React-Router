@@ -1,0 +1,21 @@
+.converter {
+    text-align: center;
+    margin-top: 3vh;
+    color: #555;
+}
+
+.converter p {
+    margin: 2vh;
+}
+
+.converter label,
+.converter input {
+    margin-right: 2vh;
+    margin-top: 2vh;
+}
+
+.converter select,
+.converter input {
+    height: 3vh;
+    font-size: 16px;
+}

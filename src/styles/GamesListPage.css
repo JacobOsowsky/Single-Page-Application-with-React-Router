@@ -1,0 +1,33 @@
+.games {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.games .game {
+    flex-basis: 30%;
+    margin: 10vh auto 0 auto;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.game:hover {
+    transform: scale(1.02);
+}
+
+.game h4 {
+    letter-spacing: 2px;
+    border-bottom: 1px solid #444;
+    padding: 2%;
+}
+
+.game p {
+    text-transform: none;
+    margin: 5%;
+    line-height: 150%;
+}
+
+.game a:hover {
+    color: #444
+}

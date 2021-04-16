@@ -8,9 +8,9 @@ const ToolPage = () => {
     return (
         <div>
             <Switch>
-                <Route path="/tool/kalkulator" component={Calculator}/>
-                <Route path="/tool/przelicznik" component={CurrencyConverter}/>
-                <Route path="/tool/zadania" component={ToDo}/>
+                <Route path="/tools/kalkulator" component={Calculator}/>
+                <Route path="/tools/przelicznik" component={CurrencyConverter}/>
+                <Route path="/tools/zadania" component={ToDo}/>
             </Switch>
         </div>
       );
