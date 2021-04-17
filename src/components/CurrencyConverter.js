@@ -70,7 +70,7 @@ class CurrencyConverter extends Component {
     }
 
     componentDidMount() {
-      const API = 'http://api.nbp.pl/api/exchangerates/tables/A/'
+      const API = 'https://api.nbp.pl/api/exchangerates/tables/A/'
       fetch(API).then(response => {
         if(response.ok){
           return response
