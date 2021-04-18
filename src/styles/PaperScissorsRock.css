@@ -28,6 +28,13 @@ div.rock {
     border-radius: 5px;
     color: white;
     background-color: rgba(43, 209, 126);
+    cursor: pointer;
+    transition: 0.2s;
+    outline: none;
+}
+
+.rock button:hover {
+    background-color: rgb(37, 161, 114);
 }
 
 .rock .statistics {
