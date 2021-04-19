@@ -92,3 +92,24 @@ div.rock {
         width: 12%;
     }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .rock .hand,
+    .rock .computerChoice {
+        width: 20%;
+    }
+
+    .rock button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rock .gameresult {
+        right: 10%;
+    }
+
+    .rock .statistics {
+        left: 10%;
+    }
+}

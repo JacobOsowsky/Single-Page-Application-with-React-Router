@@ -273,3 +273,31 @@ div.rightear div.inside {
         border: 2px solid #333;
     }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+    div.avatar {
+        bottom: -50%;
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    div.avatar {
+        width: 80px;
+        height: 115px;
+    }
+
+    .leftbrow,
+    .rightbrow {
+        border-top: 3px solid #333;
+    }
+
+    .rightglass,
+    .leftglass {
+        border: 2px solid #333;
+    }
+
+    nav,
+    .clock {
+        font-size: 14px;
+    }
+}

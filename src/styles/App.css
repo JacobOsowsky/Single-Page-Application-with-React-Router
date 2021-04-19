@@ -138,3 +138,95 @@ footer {
   }
 
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .app {
+    width: 100vw;
+  }
+
+  header {
+    position: relative;
+    flex-basis: 10vh;
+    box-shadow: 0 5px 8px silver;
+
+  }
+
+  main {
+    flex-direction: column;
+    box-shadow: 0 5px 8px silver;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vh;
+    box-shadow: 0 5px 8px silver;
+  }
+
+  h3.clock {
+    position: inherit;
+    flex-basis: 30%;
+  }
+
+  nav {
+    flex-basis: 70%;
+    flex-grow: 1;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    box-shadow: 0 5px 8px silver;
+  }
+
+  nav ul li {
+    flex-basis: 30%;
+    margin: 0 auto 0 auto;
+  }
+
+  div.switch {
+    position: inherit;
+    margin: 2vh 0 0 0;
+    flex-basis: 30%;
+  }
+
+  .switch .bar {
+    width: 6vw;
+    height: 2vw;
+  }
+
+  .switch .circle {
+    width: 3vw;
+    height: 3vw;
+  }
+
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+  nav,
+  .clock {
+    font-size: 14px;
+  }
+
+  div.switch {
+    margin: 3vh 0 0 0;
+  }
+
+  .switch .bar {
+    width: 9vw;
+    height: 3vw;
+  }
+
+  .switch .circle {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

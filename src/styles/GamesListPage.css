@@ -66,3 +66,28 @@
 
     }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .games {
+        flex-direction: column;
+    }
+
+    .games .game {
+        width: 90%;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .games {
+        width: 100%;
+    }
+
+    .games .game h4 {
+        font-size: 14px;
+    }
+
+    .games .game p {
+        font-size: 14px;
+    }
+}

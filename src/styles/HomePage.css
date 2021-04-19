@@ -8,3 +8,12 @@
 span.active {
     display: none;
 }
+
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .homePage {
+        width: 90vw;
+        font-size: 18px;
+        margin: 20px auto 0 20px;
+    }
+}

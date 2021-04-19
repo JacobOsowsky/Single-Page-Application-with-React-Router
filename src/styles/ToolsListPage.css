@@ -58,3 +58,24 @@
 
 
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .tools {
+        flex-direction: column;
+    }
+
+    .tools .tool {
+        width: 90%;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .tools .tool h4 {
+        font-size: 14px;
+    }
+
+    .tools .tool p {
+        font-size: 14px;
+    }
+}
