@@ -59,3 +59,36 @@ div.rock {
 .rock .gameresult h4 {
     margin: 2%;
 }
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+    .rock h3 {
+        font-size: 18px;
+    }
+
+    .rock h4 {
+        font-size: 16px;
+    }
+
+    .rock .statistics,
+    .rock .gameresult {
+        min-width: 20%;
+        font-size: 12px;
+        top: 60%;
+    }
+
+    .rock .gameresult {
+        right: 10%;
+    }
+
+    .rock button {
+        top: 40%;
+        left: 24%;
+        font-size: 12px;
+    }
+
+    .rock .hand,
+    .computerChoice {
+        width: 12%;
+    }
+}

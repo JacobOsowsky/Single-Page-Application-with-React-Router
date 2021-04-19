@@ -19,3 +19,15 @@
     height: 3vh;
     font-size: 16px;
 }
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .converter {
+        font-size: 16px;
+    }
+
+    .converter select,
+    .converter input {
+        height: 6vh;
+        font-size: 16px;
+    }
+}

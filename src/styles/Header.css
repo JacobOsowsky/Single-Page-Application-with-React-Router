@@ -255,3 +255,21 @@ div.rightear div.inside {
         background: linear-gradient(302deg, rgba(153, 172, 173, 1) 0%, rgba(255, 255, 255, 1) 100%);
     }
 }
+
+@media (max-width: 640px) and (orientation: landscape) {
+    div.avatar {
+        bottom: -50%;
+        width: 81px;
+        height: 115px;
+    }
+
+    .leftbrow,
+    .rightbrow {
+        border-top: 3px solid #333;
+    }
+
+    .rightglass,
+    .leftglass {
+        border: 2px solid #333;
+    }
+}

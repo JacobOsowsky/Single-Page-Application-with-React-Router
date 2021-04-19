@@ -108,3 +108,33 @@ footer {
 .switch .circle.night {
   transform: translate(0, -50%);
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .switch .bar {
+    width: 6vw;
+    height: 2vw;
+  }
+
+  .switch .circle {
+    width: 3vw;
+    height: 3vw;
+  }
+
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  header {
+    flex-basis: 15vh;
+  }
+
+  nav a,
+  h3.clock,
+  footer p {
+    font-size: 14px;
+  }
+
+  div.homePage {
+    font-size: 18px;
+  }
+
+}
