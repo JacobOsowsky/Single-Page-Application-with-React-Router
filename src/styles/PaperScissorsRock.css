@@ -113,3 +113,17 @@ div.rock {
         left: 10%;
     }
 }
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .rock .gameresult {
+        font-size: 14px
+    }
+
+    .rock .statistics {
+        font-size: 14px
+    }
+
+    .rock button {
+        font-size: 18px
+    }
+}

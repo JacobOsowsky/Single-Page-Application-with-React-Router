@@ -55,8 +55,6 @@
         flex-basis: 31%;
         margin-top: 5vh;
     }
-
-
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -71,6 +69,10 @@
 }
 
 @media (max-width: 360px) and (orientation: portrait) {
+    .tools {
+        width: 100%;
+    }
+
     .tools .tool h4 {
         font-size: 14px;
     }

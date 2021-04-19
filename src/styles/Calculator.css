@@ -78,3 +78,13 @@ div.interface {
         margin-top: 10vh;
     }
 }
+
+@media (max-width: 360px) and (orientation: portrait) {
+    div.calculator {
+        width: 90%;
+    }
+
+    .calculator button {
+        height: 8vh;
+    }
+}
