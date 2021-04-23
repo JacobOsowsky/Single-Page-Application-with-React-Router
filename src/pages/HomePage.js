@@ -13,6 +13,11 @@ class HomePage extends Component {
 
      }
 
+     id = {
+         handleTogglelId : '',
+         addLetterId : ''
+     }
+
      addLetter = () => {
         const {txt, letterNumber, textNumber,text} = this.state;
         if (textNumber <txt.length) {
@@ -56,9 +61,18 @@ class HomePage extends Component {
     }
 
     componentDidMount(){
-        setInterval(this.handleToggle, 400);
-        setInterval(this.addLetter, 40)
+        const handleToggleId = setInterval(this.handleToggle, 400);
+        const addLetterId = setInterval(this.addLetter, 40)
+        this.id.handleTogglelId = handleToggleId;
+        this.id.addLetterId = addLetterId;
     }
+
+    componentWillUnmount(){
+        clearInterval(this.id.handleTogglelId)
+        clearInterval(this.id.addLetterId)
+        
+    }
+    
 
     render() { 
         return (
